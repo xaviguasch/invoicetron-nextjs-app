@@ -9,8 +9,6 @@
   padding: 0;
 }
 
-*/
-
 /* ================== */
 /* Custom properties */
 /* ================== */
@@ -52,7 +50,7 @@
   --fs-72: 4.5rem;
   --fs-80: 5rem;
 
-  --clr-black-text: hsl(228, 29%, 7%);
+  --clr-black-text: hsl(228, 28%, 7%);
 
   --clr-black-2: hsl(233, 30%, 11%);
   --clr-black-3: hsl(233, 31%, 17%);
@@ -69,6 +67,8 @@
   --clr-light-salmon-pink: hsl(0, 100%, 80%);
 
   --clr-white-lilac: hsl(240, 27%, 98%);
+
+  --clr-white: hsl(0, 0%, 100%);
 
   /* Basics */
 

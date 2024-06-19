@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={spartan.className}>{children}</body>
+    <html lang="en" className={spartan.className}>
+      <body>{children}</body>
     </html>
   );
 }
