@@ -16,17 +16,24 @@ const Invoice = ({ item }: InvoiceProps) => {
       <p className={styles.idWrapper}>
         #<span className={styles.id}>{item.id}</span>
       </p>
-      <p className={styles.invoiceText}>{item.clientName}</p>
-      <p className={styles.invoiceText}>Due {item.paymentDue.toString()}</p>
-      <p className={styles.total}>
-        £{new Intl.NumberFormat("en-US").format(item.total)}
-      </p>
+      <div className={styles.clientWrapper}>
+        <p className={styles.invoiceText}>{item.clientName}</p>
+      </div>
+
+      <div className={styles.totalAndDueWrapper}>
+        <p className={styles.invoiceText}>Due {item.paymentDue.toString()}</p>
+        <p className={styles.total}>
+          £{new Intl.NumberFormat("en-US").format(item.total)}
+        </p>
+      </div>
+
       <div
         className={`${item.status === "paid" ? styles.paid : styles.pending} ${
           styles.statusWrapper
         }`}
       >
-        <span className={styles.cercle}></span>
+        <span className={styles.cercle}>·</span>
+
         <p className={styles.status}>{statusString}</p>
       </div>
     </div>
