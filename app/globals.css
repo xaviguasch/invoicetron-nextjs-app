@@ -68,6 +68,12 @@
 
   --clr-white-lilac: hsl(240, 27%, 98%);
 
+  --clr-green-shamrock: hsl(160, 67%, 52%);
+  --clr-green-shamrock-bg: hsl(160, 67%, 52%, 0.05);
+
+  --clr-orange-pizazz: hsl(34, 100%, 50%);
+  --clr-orange-pizazz-bg: hsla(34, 100%, 50%, 0.05);
+
   --clr-white: hsl(0, 0%, 100%);
 
   /* Basics */

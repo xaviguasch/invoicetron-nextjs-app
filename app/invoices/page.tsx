@@ -16,10 +16,18 @@ export default async function Page() {
 
   return (
     <div className={styles.InvoicesPage}>
-      <h1>Invoices page</h1>
-      {data.map((item: InvoiceDataItem) => (
-        <Invoice item={item} key={item.id} />
-      ))}
+      <div className={styles.upper}>
+        <h2>Invoices</h2>
+        <p>7 invoices</p>
+
+        <div>Filter / New</div>
+      </div>
+
+      <div className={styles.lower}>
+        {data.map((item: InvoiceDataItem) => (
+          <Invoice item={item} key={item.id} />
+        ))}
+      </div>
     </div>
   );
 }

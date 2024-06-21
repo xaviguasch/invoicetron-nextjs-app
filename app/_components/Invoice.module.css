@@ -1,4 +1,46 @@
 .Invoice {
   background: var(--clr-white);
   padding: 24px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.idWrapper {
+  color: var(--clr-wild-blue-yonder);
+  font-size: var(--fs-12);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.25px;
+}
+
+.id {
+  color: var(--clr-black-text);
+}
+
+.invoiceText {
+  font-size: var(--fs-12);
+  letter-spacing: -0.25px;
+  color: var(--clr-wild-blue-yonder);
+}
+
+.total {
+  letter-spacing: -0.8px;
+}
+
+.statusWrapper {
+}
+
+.status {
+  font-size: var(--fs-12);
+  letter-spacing: -0.25px;
+  font-weight: var(--fw-bold);
+}
+
+.paid {
+  color: var(--clr-green-shamrock);
+  background: var(--clr-green-shamrock-bg);
+}
+
+.pending {
+  color: var(--clr-orange-pizazz);
+  background: var(--clr-orange-pizazz-bg);
 }
