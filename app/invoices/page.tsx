@@ -2,11 +2,13 @@ import React from "react";
 import Invoice from "@/app/_components/Invoice";
 import { promises as fs } from "fs";
 
+import Link from "next/link";
+
 import { type InvoiceDataItem } from "@/app/types";
 
 import styles from "./page.module.css";
 
-export default async function Page() {
+export default async function InvoicesPage() {
   const file = await fs.readFile(
     process.cwd() + "/starter-code/data.json",
     "utf8"
@@ -25,7 +27,9 @@ export default async function Page() {
 
       <div className={styles.lower}>
         {data.map((item: InvoiceDataItem) => (
-          <Invoice item={item} key={item.id} />
+          <Link href={`/invoice/${item.id}`} key={item.id}>
+            <Invoice item={item} />
+          </Link>
         ))}
       </div>
     </div>
