@@ -14,6 +14,8 @@ export default async function InvoicesPage() {
     "utf8"
   );
 
+  console.log(process.env.MONGODB_URI);
+
   const data = JSON.parse(file);
 
   return (

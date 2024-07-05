@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   title: "InvoiceTron",
   description: "Xavi Guasch Invoice App",
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
